@@ -26,6 +26,7 @@ public class Palindrome {
 		int rev = 0 ;
 		int aux = nr;
 		
+		
 		while(aux!=0) {
 			rev = rev*10 +aux%10;
 			aux /= 10;

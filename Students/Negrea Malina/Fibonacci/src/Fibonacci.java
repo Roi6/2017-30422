@@ -27,8 +27,7 @@ public class Fibonacci {
 	public static int fibonacii(int nr) {
 		if(nr<= 1)
 			return nr;
-		return fibonacii(nr-1)+fibonacii(nr-2);
-		
+		return fibonacii(nr-1)+fibonacii(nr-2);		
 	}
 
 }

@@ -21,6 +21,7 @@ public class SumOfMultiples {
 		
 		System.out.println("Suma multiplioreste: " + sum);
 		
+		
 
 	}
 

@@ -22,6 +22,7 @@ public class FibonacciOn {
 			
 		
 		System.out.println("Suma termenilor: :" + sum);
+		
 	}
 
 }
