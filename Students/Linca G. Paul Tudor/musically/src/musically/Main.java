@@ -2,6 +2,27 @@ package musically;
 
 public class Main {
 
+	public static boolean addMusicianToBand(Musician musician, Band band)
+	{
+		musician.addBand(band);
+		band.addMusician(musician);
+		band.addInstrument(musician);
+		System.out.println(musician.getUsername() + " became a part of " + band.getName());
+
+		return true;
+	}
+	
+	public static boolean deleteMusicianFromBand(Musician musician, Band band)
+	{
+		musician.deleteBand(band);
+		band.deleteMusician(musician);
+		band.deleteInstrument(musician.getInstrument());
+		System.out.println(musician.getUsername() + " left the band " + band.getName());
+
+		
+		return true;
+	}
+	
 	public static void main(String[] args)
 	{
 		Musician m1 = new Musician("Danny");
@@ -23,11 +44,18 @@ public class Main {
 		m1.setUsername("DannyW");
 		System.out.println(m1.alias() + " changed his/her name to " + m1.getUsername());
 		
+		addMusicianToBand(m1, b1);
+		addMusicianToBand(m2, b1);
 		
+		b1.getInstruments();
+
+		b1.getMusicians();
+		b1.getInstruments();
+
+		deleteMusicianFromBand(m1, b1);
 		
-		
-		//b1.addMusician(m1); nu merge. NullPointerException
-		//b1.addMusician(m2);
+		b1.getInstruments();
+		b1.getMusicians();
 	}
 
 }

@@ -5,7 +5,7 @@ public class Musician
 	private Instrument instrument;
 	private int noOfBands = 0;
 	private String username;
-	private Band[] bands;
+	private Band[] bands = new Band[10];
 	private String prevUsername = null;
 	
 	public Musician(String username)
